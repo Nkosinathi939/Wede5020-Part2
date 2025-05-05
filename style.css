@@ -1,0 +1,127 @@
+
+        body {
+            background-color: grey; /* Set the background color to grey */
+            margin: 0; /* Remove default margin */
+            font-family: Arial, sans-serif; /* Set a default font */
+        }
+        header {
+            background-color: orange; /* Set the header color to orange */
+            color: white; /* Set the text color to white */
+            padding: 20px; /* Add some padding */
+            text-align: center; /* Center the text */
+        }
+        table {
+            width: 80%; /* Set the width of the table */
+            border-collapse: collapse; /* Collapse borders */
+            margin: 20px auto; /* center the table */
+        }
+        th, td {
+            border: 1px solid black; /* Add border to table cells */
+            padding: 10px; /* Add padding to cells */
+            text-align: left; /* Align text to the left */
+        }
+        th {
+            background-color: orange; /* Header background color */
+            color: white; /* Header text color */
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2; /* Alternate row color */
+        }   
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+          }
+          
+          .nav-container {
+            background-color: orange; /* Light grey background for nav container */
+            padding: 10px;
+            width: 100%;
+            box-shadow: 2px 2px 5px rgba(192, 24, 24, 0.1);
+          }
+          .nav {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            
+          }
+          .nav li {
+            margin-right: 20px;
+            
+          }
+          .nav a {
+            display: inline-block;
+            text-decoration: none;
+            color: #333;
+            background-color: orange; /* Orange box by default */
+            padding: 8px 16px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        
+          }
+          .nav a:hover {
+            background-color: grey; /* Grey box on hover */
+            color: white; /* Optional: text color changes to white for better contrast */
+          }
+          body {
+            margin: 0;
+
+        }
+        
+        body {
+            margin: 0;
+            justify-content: left;
+            align-items: left;
+            height: 210px;
+            overflow-x: hidden;
+          }
+          .slider-wrapper {
+            position: relative;
+            width: 100vw;
+            height: 100%;
+            overflow: hidden;
+            background: grey;
+    
+            
+          }
+        
+        .slider {
+          display: flex;
+          width: calc(100%); /* 3 times width for 3 images */
+          height: 100%;
+          animation: slideRight 15s linear infinite;
+        }
+        .slider img {
+          width: 33.3333vw; /* 3 images in viewport width */
+          height: 100%;
+          object-fit: cover;
+        }
+        @keyframes slideRight {
+          0% {
+            transform: translateX(-100%);
+          }
+          100% {
+            transform: translateX(0%);
+          }
+        }
+      
+        @media (max-width: 300px) {
+          body {
+            height: 220px;
+          }
+          .slider img {
+            width: 100vw;
+            height: 100px;
+          }
+          .slider {
+            width: 100vw;
+          }
+        }
+  
