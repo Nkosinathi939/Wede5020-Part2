@@ -4,3 +4,4 @@ I changed the background colour of the website. I added tables and pictures that
 the business's WhatsApp account.
 I added the social media links and location of the restaurant.
 I got my CSS styling from Youtube. https://www.youtube.com/watch?v=rIO5326FgPE
+https://www.w3schools.com/
