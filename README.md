@@ -1,7 +1,3 @@
-# Wede5020 Part2
- This is my Part 2 WEDE
-I changed the background colour of the website. I added tables and pictures that I took from
-the business's WhatsApp account.
-I added the social media links and location of the restaurant.
-I got my CSS styling from Youtube. https://www.youtube.com/watch?v=rIO5326FgPE
-https://www.w3schools.com/
+# Wede5020 Part3
+ This is my Part 3 WEDE
+I added Javascript file. When the user fills out the form and submits it, they will see a greeting message that includes their name and the details of their order. The user will be able to view the Google Map on the contact detail page.

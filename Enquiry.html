@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <scrpt defer src="Java.js"></scrpt>
+    <title>Order Here</title>
+</head>
+
+<body>
+    <div class="nav-container">
+        <ul class="nav">
+            <li><a href="homepage2.html">Homepage</a></li>
+            <li><a href="About us.html">About us</a></li>
+            <li><a href="product+service.html">Products+Services</a></li>
+            <li><a href="Enquiry.html">Enquires</a></li>
+            <li><a href="Contact det.html">Contact</a></li>
+        </ul>
+    </div> 
+        
+    <header><h1>Alencious’ House</h1></header>
+       
+    <h1>Order Here</h1>
+        
+    <form id="order-form">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" required>
+        </div>
+        <div class="form-group">
+            <label for="order-details">What is your order?</label>
+            <textarea id="order-details" rows="4" required placeholder="Please describe your order..."></textarea>
+        </div>
+        <button type="submit">Submit Order</button>
+    </form>
+
+    <div id="greeting-message" style="display: none; margin-top: 20px;"></div>
+
+    <footer>
+        <a href="About us.html">since 2019 @ A local Restaurant/Chill spot that serves the Best DISHES!</a>
+    </footer>
+
+    <script>
+        document.getElementById('order-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            const name = document.getElementById('name').value;
+            const orderDetails = document.getElementById('order-details').value;
+
+            // Display greeting message
+            const greetingMessage = document.getElementById('greeting-message');
+            greetingMessage.textContent = `👋 Hi ${name}! Thank you for your order: "${orderDetails}". We will contact you shortly!`;
+            greetingMessage.style.display = 'block';
+
+            // Optionally, you can reset the form after submission
+            this.reset();
+        });
+    </script>
+</body>
+</html>
